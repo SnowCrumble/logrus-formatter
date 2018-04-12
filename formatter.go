@@ -87,7 +87,7 @@ func (f *Formatter) Format(entry *logrus.Entry) ([]byte, error) {
 			if !strings.HasPrefix(frame.Function, "github.com/sirupsen/logrus") {
 				debugInfo := fmt.Sprintf("[%s][%s][%d]",
 					filepath.Base(frame.File),
-					frame.Func.Name(),
+					filepath.Base(frame.Func.Name()),
 					frame.Line,
 				)
 				f.appendKeyValue("debug", debugInfo)
