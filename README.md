@@ -1,5 +1,5 @@
 # logrus-formatter
-A custom text formater for logrus with debug info(filename, function name and line NO.)
+A custom text formater for logrus with debug info(filename, function name and line no.)
 ## Enable Debug Info
 ### Code
 ```
