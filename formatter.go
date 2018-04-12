@@ -84,7 +84,7 @@ func (f *Formatter) Format(entry *logrus.Entry) ([]byte, error) {
 			if !more {
 				break
 			}
-			if !strings.HasPrefix(frame.Function, "github.com/sirupsen/logrus") {
+			if !strings.Contains(frame.Function, "github.com/sirupsen/logrus") {
 				debugInfo := fmt.Sprintf("[%s][%s][%d]",
 					filepath.Base(frame.File),
 					filepath.Base(frame.Func.Name()),
